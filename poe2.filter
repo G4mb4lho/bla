@@ -23,6 +23,14 @@ Show
 	PlayEffect Brown
 	MinimapIcon 0 Brown Circle
 
+Show
+	BaseType "Azure Amulet"
+	Rarity == "Normal"
+	SetFontSize 40
+	SetTextColor 192 128 254 255
+	SetBorderColor 192 128 254 255
+	SetBackgroundColor 25 25 0 200
+
 #--------------------------
 # Gold
 #--------------------------
@@ -93,7 +101,7 @@ Show
 	SetBorderColor 255 207 132
 	MinimapIcon 2 Grey Circle
 
-Show
+Hide
 	Class "Currency"
 	BaseType "Wisdom" "Shard"
 
@@ -154,14 +162,13 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Circle
 
-Show
+Hide
 	Class = "Amulets" "Rings"
 	Rarity >= Magic
 	SetFontSize 30
-	SetTextColor 255 255 119 255
-	SetBorderColor 255 255 119 255
+	SetTextColor 136 136 255 255
+	SetBorderColor 136 136 255 255
 	SetBackgroundColor 25 25 0 200
-	MinimapIcon 0 Blue Circle
 
 Hide
 	Class = "Amulets" "Rings"
@@ -214,7 +221,7 @@ Show
 	SetBackgroundColor 25 25 0 200
 	PlayEffect Blue Temp
 
-Show
+Hide
 	Class = "Belts" "Body Armours" "Helmets" "Gloves" "Boots" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci"
 	Rarity >= Magic
 	SetFontSize 30
@@ -261,7 +268,6 @@ Show
 	SetTextColor 254 128 222 255
 	SetBorderColor 254 128 222 255
 	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 5 300
 	PlayEffect Pink
 	MinimapIcon 0 Pink Star
 
@@ -271,12 +277,14 @@ Show
 
 Show
 	BaseType "Ultimate Life "
+	Quality > 10
 	SetFontSize 25
 	SetTextColor 254 128 128 255
 	SetBackgroundColor 25 25 0 200
 
 Show
 	BaseType "Ultimate Mana "
+	Quality > 10
 	SetFontSize 25
 	SetTextColor 128 179 254 255
 	SetBackgroundColor 25 25 0 200
