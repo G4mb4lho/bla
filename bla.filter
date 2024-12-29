@@ -406,22 +406,6 @@ Hide
 	SetBackgroundColor 25 25 0 200
 
 Hide
-	Class = "Body Armours" "Helmets" "Gloves" "Boots" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci"
-	Rarity >= Normal
-	Sockets > 0
-	SetFontSize 25
-	SetTextColor 200 200 200 255
-	SetBackgroundColor 25 25 0 200
-
-Hide
-	Class = "Belts" "Body Armours" "Helmets" "Gloves" "Boots" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci"
-	Rarity >= Normal
-	Quality > 0
-	SetFontSize 25
-	SetTextColor 200 200 200 255
-	SetBackgroundColor 25 25 0 200
-
-Hide
 	Class = "Belts" "Body Armours" "Helmets" "Gloves" "Boots" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci"
 	Rarity >= Normal
 
