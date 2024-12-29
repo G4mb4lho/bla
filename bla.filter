@@ -528,7 +528,7 @@ Show
 Show
 	BaseType "Ultimate Life "
 	Quality > 15
-	ItemLevel >= 83
+	ItemLevel >= 80
 	SetFontSize 25
 	SetTextColor 254 128 128 255
 	SetBackgroundColor 25 25 0 200
@@ -536,7 +536,7 @@ Show
 Show
 	BaseType "Ultimate Mana "
 	Quality > 15
-	ItemLevel >= 83
+	ItemLevel >= 80
 	SetFontSize 25
 	SetTextColor 128 179 254 255
 	SetBackgroundColor 25 25 0 200
