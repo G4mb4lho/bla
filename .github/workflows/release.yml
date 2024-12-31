@@ -17,8 +17,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'bla.zip'
-        exclusions: '*.git* *.github* LICENSE'
-        recursive_exclusions: *.md
+        exclusions: '*.git* *.github* LICENSE *.md sounds/*.md'
 
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
