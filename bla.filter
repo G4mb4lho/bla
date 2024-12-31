@@ -110,10 +110,10 @@ Show
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 175 96 37 255
-	PlayAlertSound 1 300
+	PlayAlertSound 1 200
 
 # Multi-base Uniques
-Show # $type->uniques $tier->multispecialhigh
+Show
 	Rarity Unique
 	BaseType == "Gold Ring" "Stellar Amulet" "Solar Amulet" "Wide Belt" "Amethyst Ring" "Ruby Ring" "Topaz Ring" "Amber Amulet" "Emerald Ring" "Jade Amulet" "Lazuli Ring" "Sapphire Ring" "Gold Amulet" "Pearl Ring" "Crimson Amulet" "Lapis Amulet" "Rawhide Belt" "Azure Amulet" "Omen Crest Shield" "Chain Tiara" "Linen Wraps" "Silk Robe" "Explorer Armour" "Shrine Sceptre" "Moulded Mitts"
 	SetFontSize 30
@@ -122,7 +122,7 @@ Show # $type->uniques $tier->multispecialhigh
 	SetBackgroundColor 175 96 37 255
 
 # Rest Uniques
-Show # $type->uniques $tier->restex
+Show
 	Rarity Unique
 	SetFontSize 30
 	SetTextColor 175 96 37 255
@@ -136,11 +136,11 @@ Show # $type->uniques $tier->restex
 # Currency Tier A: Gemcutter, Annullment
 Show
 	Class "Currency"
-	BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+	BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
 	SetTextColor 170 158 130 255
 	SetBorderColor 170 158 130 255
 	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 1 300
+	PlayAlertSound 1 200
 	PlayEffect White
 	MinimapIcon 1 White Circle
 	SetFontSize 40
@@ -169,29 +169,38 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
-	SetTextColor 170 158 130 255
-	SetBorderColor 170 158 130 255
+	BaseType "Breach Splinter"
+	SetTextColor 88 0 179 255
+	SetBorderColor 88 0 179 255
 	SetBackgroundColor 25 25 0 200
-	CustomAlertSound "sounds/fear-uwu.mp3"
-	PlayEffect White Temp
-	MinimapIcon 1 White Kite
-	SetFontSize 35
-
-Show
-	Class "Omen"
-	BaseType "Omen of"
-	SetTextColor 65 20 80
-	SetBorderColor 65 20 80
-	SetBackgroundColor 170 158 130
-	SetFontSize 35
+	PlayEffect Purple Temp
+	MinimapIcon 1 Purple Kite
+	Continue
 
 Show
 	Class "Currency"
-	BaseType "Distilled" "Catalyst" "Essence of"
-	SetTextColor 170 158 130 255
-	SetBorderColor 170 158 130 255
+	BaseType " Artifact"
+	SetTextColor 42 42 42 255
+	SetBorderColor 42 42 42 255
+	SetBackgroundColor 221 221 221 200
+	PlayEffect Grey Temp
+	MinimapIcon 1 Grey Kite
+	Continue
+
+Show
+	Class "Currency"
+	BaseType "Simulacrum Splinter"
+	SetTextColor 221 221 221 255
+	SetBorderColor 221 221 221 255
 	SetBackgroundColor 25 25 0 200
+	PlayEffect White Temp
+	MinimapIcon 1 White Kite
+	Continue
+
+Show
+	Class "Currency"
+	BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact"
+	CustomAlertSound "sounds/fear-uwu.mp3"
 	SetFontSize 35
 
 # Currency Tier C: Quality, Aug, Transmut, etc
@@ -227,7 +236,152 @@ Hide
 	Class "Currency"
 	BaseType "Scroll of Wisdom"
 
-# Unknown currency
+#--------------------------
+# Omen
+#--------------------------
+
+Show
+	BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+	SetFontSize 40
+	SetTextColor 88 0 179 255
+	SetBorderColor 88 0 179 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 200
+	PlayEffect Purple
+	MinimapIcon 1 Purple Star
+
+Show
+	BaseType == "Omen of Corruption" "Omen of Amelioration"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 88 0 179 255
+	PlayAlertSound 1 200
+	PlayEffect Purple
+	MinimapIcon 0 Purple Circle
+
+Show
+	BaseType == "Omen of Sinistral Alchemy" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Greater Annulment"
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 88 0 179 255
+
+Show
+	BaseType "Omen of"
+	SetFontSize 35
+	SetTextColor 88 0 179 255
+	SetBorderColor 88 0 179 255
+	SetBackgroundColor 25 25 0 200
+
+#--------------------------
+# Distilled
+#--------------------------
+
+Show
+	BaseType == "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 40
+	SetTextColor 170 158 130 255
+	SetBorderColor 170 158 130 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 200
+	PlayEffect White
+	MinimapIcon 1 White Star
+
+Show
+	BaseType == "Distilled Despair"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 170 158 130 255
+	PlayAlertSound 1 200
+	PlayEffect White
+	MinimapIcon 0 White Circle
+
+Show
+	BaseType == "Distilled Paranoia" "Distilled Envy" "Distilled Greed" "Distilled Disgust"
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 170 158 130 255
+
+Show
+	BaseType "Distilled"
+	SetFontSize 35
+	SetTextColor 170 158 130 255
+	SetBorderColor 170 158 130 255
+	SetBackgroundColor 25 25 0 200
+
+#--------------------------
+# Essence
+#--------------------------
+
+Show
+	BaseType == "Greater Essence of Torment" "Greater Essence of Ruin" "Greater Essence of Haste" "Greater Essence of Sorcery"
+	SetFontSize 40
+	SetTextColor 191 91 0 255
+	SetBorderColor 191 91 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 200
+	PlayEffect Orange
+	MinimapIcon 0 Orange Star
+
+Show
+	BaseType == "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of the Infinite" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Battle"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 191 91 0 255
+	PlayAlertSound 1 200
+	PlayEffect Orange
+	MinimapIcon 0 Orange Circle
+
+Show
+	BaseType == "Essence of Torment" "Essence of Haste" "Essence of Electricity" "Essence of Battle" "Essence of Sorcery" "Essence of Ruin"
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 191 91 0 255
+
+Show
+	BaseType "Essence of "
+	SetFontSize 35
+	SetTextColor 191 91 0 255
+	SetBorderColor 191 91 0 255
+	SetBackgroundColor 25 25 0 200
+
+#--------------------------
+# Catalyst
+#--------------------------
+
+Show
+	BaseType == "Adaptive Catalyst" "Neural Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst"
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 204 0 154 255
+	PlayAlertSound 1 200
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+
+Show
+	BaseType == "Chayula's Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst"
+	SetFontSize 35
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 204 0 154 255
+
+Show
+	BaseType "Catalyst"
+	SetFontSize 35
+	SetTextColor 204 0 154 255
+	SetBorderColor 204 0 154 255
+	SetBackgroundColor 25 25 0 200
+
+#--------------------------
+# Currency catch-all
+#--------------------------
+
 Show
 	Class "Currency"
 	SetTextColor 255 255 255 255
@@ -242,18 +396,10 @@ Show
 	SetTextColor 255 207 255
 	SetBorderColor 255 207 255
 	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
+	PlayAlertSound 2 200
 	PlayEffect White
 	MinimapIcon 1 Yellow Square
 	SetFontSize 40
-
-Show
-	Class "Omen"
-	BaseType "Omen of"
-	SetTextColor 65 20 80
-	SetBorderColor 65 20 80
-	SetBackgroundColor 170 158 130
-	SetFontSize 35
 
 Show
 	BaseType "Simulacrum" "Breachstone" " Fate" "Expedition Logbook" "Test of" "Tablet"
@@ -264,7 +410,7 @@ Show
 
 Show
 	BaseType "Simulacrum" "Breachstone" " Fate" "Expedition Logbook" "Test of"
-	PlayAlertSound 2 300
+	PlayAlertSound 2 200
 	PlayEffect Purple
 	MinimapIcon 1 Purple Square
 	SetFontSize 40
@@ -294,7 +440,7 @@ Show
 	SetBorderColor 255 255 255
 	SetBackgroundColor 25 25 0 200
 	SetFontSize 35
-	PlayAlertSound 4 300
+	PlayAlertSound 4 200
 	PlayEffect White
 	MinimapIcon 1 White Square
 	SetFontSize 40
@@ -325,7 +471,6 @@ Show
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 233 30 99 255
-	PlayAlertSound 3 300
 	PlayEffect Pink
 	MinimapIcon 0 Pink Circle
 
@@ -410,13 +555,13 @@ Hide
 	Rarity >= Normal
 
 #--------------------------
-# Show All Runes and Soul Cores Section
+# Soul Cores
 #--------------------------
 
 Show
 	Class == "Socketable"
 	BaseType == "Soul Core of Azcapa"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 128 254 128 255
 	SetBorderColor 128 254 128 255
 	SetBackgroundColor 255 255 255 255
@@ -431,7 +576,7 @@ Show
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 128 254 128 255
-	PlayAlertSound 1 300
+	PlayAlertSound 1 200
 	PlayEffect Green
 	MinimapIcon 0 Green Circle
 
@@ -452,7 +597,7 @@ Show
 	SetBackgroundColor 25 25 0 200
 
 #--------------------------
-# Show All Runes and Soul Cores Section
+# Runes
 #--------------------------
 
 Show
@@ -461,7 +606,7 @@ Show
 	SetTextColor 128 254 128 255
 	SetBorderColor 128 254 128 255
 	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 5 300
+	PlayAlertSound 5 200
 	PlayEffect Green
 	MinimapIcon 0 Green Star
 
