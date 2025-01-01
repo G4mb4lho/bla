@@ -319,35 +319,35 @@ Show
 Show
 	BaseType == "Greater Essence of Torment" "Greater Essence of Ruin" "Greater Essence of Haste" "Greater Essence of Sorcery"
 	SetFontSize 40
-	SetTextColor 191 91 0 255
-	SetBorderColor 191 91 0 255
+	SetTextColor 254 128 128 255
+	SetBorderColor 254 128 128 255
 	SetBackgroundColor 255 255 255 255
 	PlayAlertSound 6 200
-	PlayEffect Orange
-	MinimapIcon 0 Orange Star
+	PlayEffect Red
+	MinimapIcon 0 Red Star
 
 Show
 	BaseType == "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of the Infinite" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Battle"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
-	SetBackgroundColor 191 91 0 255
+	SetBackgroundColor 254 128 128 255
 	PlayAlertSound 1 200
-	PlayEffect Orange
-	MinimapIcon 0 Orange Circle
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
 
 Show
 	BaseType == "Essence of Torment" "Essence of Haste" "Essence of Electricity" "Essence of Battle" "Essence of Sorcery" "Essence of Ruin"
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
-	SetBackgroundColor 191 91 0 255
+	SetBackgroundColor 254 128 128 255
 
 Show
 	BaseType "Essence of "
 	SetFontSize 35
-	SetTextColor 191 91 0 255
-	SetBorderColor 191 91 0 255
+	SetTextColor 254 128 128 255
+	SetBorderColor 254 128 128 255
 	SetBackgroundColor 25 25 0 200
 
 #--------------------------
@@ -379,17 +379,8 @@ Show
 	SetBackgroundColor 25 25 0 200
 
 #--------------------------
-# Currency catch-all
+# Map Content
 #--------------------------
-
-Show
-	Class "Currency"
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 170 158 130 255
-	PlayEffect White
-	MinimapIcon 2 White Circle
-	SetFontSize 40
 
 Show
 	Class "Pinnacle Keys"
@@ -398,7 +389,7 @@ Show
 	SetBackgroundColor 65 20 80
 	PlayAlertSound 2 200
 	PlayEffect White
-	MinimapIcon 1 Yellow Square
+	MinimapIcon 1 White Square
 	SetFontSize 40
 
 Show
@@ -636,12 +627,37 @@ Show
 #--------------------------
 
 Show
-	BaseType "Gold Key" "Silver Key" "Bronze Key"
-	SetTextColor 30 144 255 255
-	SetBorderColor 30 144 255 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 2 200
-	SetFontSize 40
+	Class == "Stackable Currency"
+	BaseType == "Gold Key"
+	SetFontSize 35
+	SetTextColor 254 213 0 255
+	SetBorderColor 254 213 0 255
+	SetBackgroundColor 25 25 0 200
+	PlayAlertSound 3 200
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Pentagon
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Silver Key"
+	SetFontSize 35
+	SetTextColor 200 200 200 255
+	SetBorderColor 200 200 200 255
+	SetBackgroundColor 25 25 0 200
+	PlayAlertSound 3 200
+	PlayEffect White
+	MinimapIcon 0 White Pentagon
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Bronze Key"
+	SetFontSize 35
+	SetTextColor 124 81 50 255
+	SetBorderColor 124 81 50 255
+	SetBackgroundColor 20 20 0 200
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 2 Brown Pentagon
 
 Show
 	Class "Relic"
@@ -682,6 +698,19 @@ Hide
 	SetFontSize 25
 	SetTextColor 255 192 203 255
 	SetBackgroundColor 25 25 0 200
+
+#--------------------------
+# Currency catch-all
+#--------------------------
+
+Show
+	Class "Currency"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 170 158 130 255
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	SetFontSize 40
 
 #--------------------------
 #   Show All Unknown Section
